@@ -1,4 +1,4 @@
-#DINO LAND
+# DINO LAND
 This is a repo containing my (Justin Vaughn) interactive DOM-base clicker game, _Dino Land_!
 
 ## Questions?
