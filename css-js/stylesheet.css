@@ -1,0 +1,149 @@
+/* CSS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Main Structure or Shared Structure*/
+.flex-columns{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.buyables-column, .play-area{
+    width: 30%;
+    padding: 0 1em;
+}
+
+/* Banner */
+#title-banner{
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+
+/* Buyables */
+
+.buyables-container{
+    height: 72%;
+    margin: auto;
+    margin-top: 1em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+.buyables-column{
+    height: auto;
+}
+
+.buyables-individual{
+    width: 85%;
+    height: 100px;
+    background-color: #EFEFEF;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    padding: 0 1em;
+    transition: 0.2s;
+    user-select: none;
+}
+
+#create-dino:active{
+    background-color: darkseagreen;
+}
+
+i{
+    transition: 0.2s;
+}
+
+.buyables-title{
+    flex-grow: 3;
+    align-self: center;
+    text-align: center;
+}
+
+.buyables-costs{
+    flex-grow: 2;
+    align-self: center;
+    text-align: center;
+}
+
+.cost{
+    background-color: lightcoral;
+}
+
+.benefit{
+    background-color: lightgreen;
+}
+
+/* Informational Area */
+
+.play-area{
+    flex-grow: 1;
+    padding: 1% 2%;
+    height: 70%;
+}
+
+.play-block{
+    margin-top: 1em;
+}
+
+.play-stat, .play-info{
+    display: inline-block;
+}
+
+.play-info{
+    font-weight: bold;
+}
+
+.play-bonuses{
+    margin-top: 1em;
+    height: 28ex;
+    display: flex;
+    flex-flow: row wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #EFEFEF;
+}
+
+.play-bonus{
+    margin: 15px;
+    flex-wrap: wrap;
+    font-size: 3em;
+    transition: 0.1s;
+}
+
+.play-bonus:hover{
+    color: darkgrey;
+}
+
+.play-bonus:active{
+    color: grey;
+}
+
+.play-bonus-title{
+    margin-top: 2em;
+}
+
+/* Console Entries */
+#console{
+    overflow-y: hidden;
+}
+
+.console-entries{
+    padding: 2em 1.5em;
+}
